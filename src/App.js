@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import logo from './asvaserver.png';
+import {FaDownload} from 'react-icons/fa';
 import './App.css';
 
 function App() {
@@ -7,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Download <code>import.pdf</code>.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="/assets/import.pdf"
           target="_blank"
-          rel="noopener noreferrer"
+          download
         >
-          Learn React
+        <FaDownload/>
         </a>
       </header>
     </div>
